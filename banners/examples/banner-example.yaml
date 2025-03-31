@@ -1,0 +1,9 @@
+apiVersion: banners.eda.local/v1alpha1
+kind: Banner
+metadata:
+  name: example-banner
+  namespace: eda
+spec:
+  nodeSelector:
+    - eda.nokia.com/role=leaf
+  loginBanner: Hello EDA!
